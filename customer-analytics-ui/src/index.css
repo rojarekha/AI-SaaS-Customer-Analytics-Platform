@@ -1,0 +1,196 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   COLOR VARIABLES
+=========================== */
+
+:root{
+
+    /* Light Theme */
+
+    --bg:#f4f7fb;
+
+    --card:#ffffff;
+
+     --navbar:#ffffff;
+
+    --sidebar:#ffffff;
+
+    --text:#111827;
+
+    --text-light:#64748b;
+
+    --primary:#2563eb;
+
+    --primary-hover:#1d4ed8;
+
+    --border:#e5e7eb;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   DARK THEME (Professional SaaS)
+=========================== */
+
+body.dark{
+
+    --bg:#0b1120;
+
+    --card:#111827;
+
+    --navbar:#111827;
+
+    --sidebar:#111827;
+
+    --text:#f8fafc;
+
+    --text-light:#94a3b8;
+
+    --primary:#6366f1;
+
+    --primary-hover:#7c3aed;
+
+    --border:#334155;
+
+    --shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    transition:.35s;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    background:var(--navbar);
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    background:var(--sidebar);
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card,
+.dashboard-card,
+.customer-form,
+.analytics-card,
+.recent-customers,
+.recent-activity{
+
+    background:var(--card);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+th{
+
+    background:var(--navbar);
+
+    color:white;
+
+}
+
+td{
+
+    background:var(--card);
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+
+    background:var(--card);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+}
+
+input::placeholder{
+
+    color:var(--text-light);
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}

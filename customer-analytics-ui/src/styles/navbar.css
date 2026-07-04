@@ -1,0 +1,241 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 32px;
+
+    background:var(--navbar);
+
+    color:var(--text);
+
+    border-bottom:1px solid var(--border);
+
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.navbar h2{
+
+    margin:0;
+
+    color:var(--text);
+
+    font-size:24px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+/* ===========================
+   USER
+=========================== */
+
+.user-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.avatar{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#6366f1,#7c3aed);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(99,102,241,.35);
+
+}
+
+.user-info h4{
+
+    margin:0;
+
+    color:var(--text);
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.user-info span{
+
+    color:var(--text-light);
+
+    font-size:13px;
+
+}
+
+/* ===========================
+   THEME BUTTON
+=========================== */
+
+.theme-btn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:var(--card);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.theme-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   NOTIFICATION
+=========================== */
+
+.notification{
+
+    position:relative;
+
+    font-size:24px;
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.notification:hover{
+
+    transform:scale(1.1);
+
+    color:var(--primary);
+
+}
+
+.notification-count{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-8px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:14px;
+
+    }
+
+    .navbar h2{
+
+        font-size:18px;
+
+    }
+
+    .user-info{
+
+        display:none;
+
+    }
+
+}

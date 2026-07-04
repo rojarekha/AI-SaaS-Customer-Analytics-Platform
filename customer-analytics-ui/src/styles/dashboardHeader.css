@@ -1,0 +1,34 @@
+.dashboard-header{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:28px 35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    color:var(--text);
+    box-shadow:var(--shadow);
+}
+
+.dashboard-header h1{
+    color:var(--text);
+    font-size:48px;
+    font-weight:700;
+}
+
+.dashboard-header p{
+    margin-top:8px;
+    color:var(--text-light);
+    font-size:20px;
+}
+
+.header-time h3{
+    margin:0;
+    color:var(--text);
+}
+
+.header-time p{
+    margin-top:5px;
+    color:var(--text-light);
+}

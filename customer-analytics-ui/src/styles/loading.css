@@ -1,0 +1,33 @@
+.loading-container{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:var(--bg);
+    color:var(--text);
+}
+
+.loader{
+    width:70px;
+    height:70px;
+    border:8px solid var(--border);
+    border-top:8px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-bottom:25px;
+}
+
+.loading-container h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
