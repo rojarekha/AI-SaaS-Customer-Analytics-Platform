@@ -13,7 +13,7 @@ function Login() {
         try {
 
             const response = await axios.post(
-                "http://localhost:8080/auth/login",
+                "https://customer-analytics-api-wrwf.onrender.com/auth/login",
                 {
                     email,
                     password

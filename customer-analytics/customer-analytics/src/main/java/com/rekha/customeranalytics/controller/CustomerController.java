@@ -15,7 +15,7 @@ import java.util.Map;
 @SecurityRequirement(name = "BearerAuth")
 @RestController
 @RequestMapping("/customers")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class CustomerController {
 
     private final CustomerService customerService;
